@@ -1,0 +1,32 @@
+# Бинарные файлы и скомпилированные исполняемые файлы
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+/bin/
+/server # Если вы компилируете в корне как `server`
+
+# Временные файлы и логи
+*.log
+*.out
+*.test
+*.prof # Файлы профилирования
+
+# Зависимости и кэш Go
+vendor/
+go.sum # Можно оставить, если не используете vendor
+*.mod.bak
+
+# Файлы редакторов и IDE
+*.idea/ # IntelliJ IDEA
+*.vscode/ # Visual Studio Code
+*.swp # Vim swap files
+*~
+
+# Тестовые и временные директории
+/test/
+/tmp/
+
+# macOS
+.DS_Store
