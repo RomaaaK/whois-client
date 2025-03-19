@@ -12,4 +12,9 @@ func SetupUserRoutes(group *gin.RouterGroup, h *handlers.UserHandler) {
 	group.POST("/users", h.CreateUser)
 	group.PUT("/users/:id", h.UpdateUser)
 	group.DELETE("/users/:id", h.DeleteUser)
+
+	group.GET("/users/search/:query", h.SearchUser)
+
+	group.GET("users/:id/comments", h.GetUserComments)
+	group.POST("users/:id/comments", h.CreateUserComment)
 }

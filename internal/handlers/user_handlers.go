@@ -84,3 +84,15 @@ func (h *UserHandler) DeleteUser(c *gin.Context) {
 	}
 	c.JSON(http.StatusOK, gin.H{"message": "Пользователь удален"})
 }
+
+func (h *UserHandler) SearchUser(c *gin.Context) {
+	c.JSON(http.StatusBadRequest, gin.H{"message": "not implement"})
+}
+
+func (h *UserHandler) CreateUserComment(c *gin.Context) {
+	c.JSON(http.StatusBadRequest, gin.H{"message": "not implement"})
+}
+
+func (h *UserHandler) GetUserComments(c *gin.Context) {
+	c.JSON(http.StatusBadRequest, gin.H{"message": "not implement"})
+}
